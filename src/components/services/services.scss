@@ -1,0 +1,113 @@
+.services{
+    background: linear-gradient(180deg, #0c0c1d, #1d1d2c, #2c2c3d, #3d3d4d);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .textContainer{
+        flex: 1;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p{
+            font-weight: 200;
+            font-size: 20px;
+            text-align: right;
+
+        }
+    };
+
+    hr {
+        width: 500px;
+        border: none;
+        border-top: 0.5px solid gray;
+    }
+
+    .titleContainer{
+        flex:2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .title{
+            display:flex;
+            gap: 50px;
+            align-items: center;
+
+            img {
+                width: 300px;
+                height: 100px;
+                border-radius: 50px;
+                object-fit: cover;
+            };
+
+            h1{
+                font-size: 96px;
+                font-weight: 100;
+
+                .unique-text {
+                    background: linear-gradient(270deg, #ff00ff, #00ffff, #ffff00, #ff00ff);
+                    background-size: 600% 600%;
+                    background-clip: text;
+                    color: transparent;
+                    animation: gradientAnimation 10s ease infinite;
+                    font-weight: bold;
+                  }
+
+                  @keyframes gradientAnimation {
+                    0% {
+                      background-position: 0% 50%;
+                    }
+                    50% {
+                      background-position: 100% 50%;
+                    }
+                    100% {
+                      background-position: 0% 50%;
+                    }
+                  }
+            }
+
+            button{
+                width: 300px;
+                height: 100px;
+                border-radius: 50px;
+                background-color: orange;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        };
+
+    };
+
+    .listContainer{
+        flex:2;
+        display: flex;
+        gap: 20px; /* Add this line to add spacing between the boxes */
+        max-width: 1366px;
+        margin: auto;
+        padding-bottom: 100px;
+
+        .box{
+            padding: 50px;
+            border: 0.5px solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            button{
+                padding: 10px;
+                background-color: orange;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    
+};

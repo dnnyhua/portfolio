@@ -1,0 +1,56 @@
+.parallax{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .parallax-title {
+        font-size: 5vw; /* Adjust the size based on the viewport width */
+        text-align: center;
+        z-index: 5;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: rgba(12, 12, 29, 0.5); // semi-transparent black background
+        padding: 1rem 2rem; // add padding for better readability
+        border-radius: 10px; // rounded corners
+        display: inline-block; // ensures the background doesn't stretch full width
+      }
+    
+      .img5, .img4, .img3, .img2, .img1 {
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+    
+      .img5 {
+        background-image: url("https://picallow.com/wp-content/uploads/2024/05/2024-05-25_665235c44b0d2_parallax5.png");
+        z-index: 2;
+      }
+    
+      .img4 {
+        background-image: url("https://picallow.com/wp-content/uploads/2024/05/2024-05-25_665235c44b12b_parallax4.png");
+        z-index: 3;
+      }
+    
+      .img3 {
+        background-image: url("https://picallow.com/wp-content/uploads/2024/05/2024-05-25_665235c44b18e_parallax3.png");
+        z-index: 4;
+      }
+    
+      .img2 {
+        background-image: url("https://picallow.com/wp-content/uploads/2024/05/2024-05-25_665235c44b200_parallax2.png");
+        z-index: 5;
+      }
+    
+      .img1 {
+        background-image: url("https://picallow.com/wp-content/uploads/2024/05/2024-05-25_665235c44b268_parallax1.png");
+        z-index: 6;
+      }
+    
+}

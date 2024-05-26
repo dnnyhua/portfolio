@@ -1,0 +1,99 @@
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #1d1d2c, #2c2c3d, #3d3d4d);
+  position: relative;
+  overflow-x: hidden;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+
+    .textContainer {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      z-index: 2; /* Ensure textContainer is above other elements */
+    }
+
+    h2 {
+      font-size: 30px;
+      color: #801da1;
+      letter-spacing: 10px;
+    }
+
+    h1 {
+      font-size: 88px;
+    }
+
+    .buttons {
+      button {
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        margin-right: 20px;
+        cursor: pointer;
+        font-weight: 300;
+      }
+    }
+
+    .imageContainer {
+      width: 100vw;
+      height: 100vw; 
+      max-width: 500px; 
+      max-height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 50%;
+      z-index: 999;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the container without distortion */
+        object-position: 46% center; /* Adjust the position based on a percentage */
+        border-radius: 50%;
+        border: 4px solid black;
+      }
+    }
+  }
+
+.anotherContainer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  white-space: nowrap;
+  height: calc(100vh - 100px);
+
+  .slidingTextContainer {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .slidingTexts {
+    font-size: 20vh;
+    color: #ffffff09;
+    // background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f, #feb47b);
+    // background-clip: text;
+    // color: transparent;
+    // display: inline-block;
+  }
+
+}
+
+  
+}

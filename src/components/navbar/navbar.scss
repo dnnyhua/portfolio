@@ -1,0 +1,40 @@
+.navbar {
+    height: 100px;
+    z-index: 999;
+
+    .wrapper{
+        max-width: 1366px; //popular width size
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    span{
+        font-weight: bold;
+    }
+
+    .social{
+        display: flex;
+        gap: 10px;
+    }
+
+    img{
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.course{
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   .box{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+   }
+}
