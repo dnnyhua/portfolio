@@ -52,8 +52,8 @@
                 .unique-text {
                     background: linear-gradient(270deg, #ff00ff, #00ffff, #ffff00, #ff00ff);
                     background-size: 600% 600%;
-                    background-clip: text;
-                    color: transparent;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                     animation: gradientAnimation 10s ease infinite;
                     font-weight: bold;
                   }
