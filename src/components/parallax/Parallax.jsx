@@ -36,6 +36,11 @@ const Parallax = ({ type }) => {
     stiffness: 700,
     damping: 40,
   });
+  const yBg6 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "1300%"]), {
+    stiffness: 700,
+    damping: 40,
+  });
+  
 
 
   return (
@@ -46,6 +51,8 @@ const Parallax = ({ type }) => {
        <motion.h1 className="parallax-title" style={{ y: yText }}>
         {type === "services" ? "How Can I Help?" : "What We Did?"}
       </motion.h1>
+
+      <motion.div style={{ y: yBg6 }} className="img6"></motion.div>
       <motion.div style={{ y: yBg5 }} className="img5"></motion.div>
       <motion.div style={{ y: yBg4 }} className="img4"></motion.div>
       <motion.div style={{ y: yBg3 }} className="img3"></motion.div>
