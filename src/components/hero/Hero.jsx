@@ -47,14 +47,13 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="wrapper">
-            <motion.div
-            className="textContainer"
+            <motion.div className="textContainer"
             variants={textVariants}
             initial="initial"
             animate="animate"
             >
                 <motion.h2 variants={textVariants}>DANNY HUA</motion.h2>
-                <motion.h1 variants={textVariants}> Web Developer</motion.h1>
+                <motion.h1 variants={textVariants}> Software Developer</motion.h1>
                 <motion.div variants={textVariants} className="buttons" >
                     <motion.button variants={textVariants}>
                     See Latest Works
@@ -64,7 +63,7 @@ const Hero = () => {
             </motion.div>
 
             <div className="imageContainer">
-            <img src="/pfp.png" alt="" />
+            <img src="/pfp-blue.png" alt="" />
             </div>
         </div>
 

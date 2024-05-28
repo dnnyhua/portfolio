@@ -2,6 +2,16 @@ html {
     scroll-snap-type: y;
     scroll-behavior: smooth;
 
+    #Services, #Portfolio {
+        scroll-snap-align: none;
+    }
+
+    section {
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+    
+
 }
 
 *{
@@ -21,7 +31,4 @@ body{
     color: lightgray;
 }
 
-section {
-    height: 100vh;
-    scroll-snap-align: start;
-}
+

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./parallax.scss";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 
 const Parallax = ({ type }) => {
@@ -11,9 +11,15 @@ const Parallax = ({ type }) => {
     offset: ["start start", "end start"]
   });
 
+  const xImage = useSpring(useTransform(scrollYProgress, [0, 1], [-300, 300]), {
+    stiffness: 150,
+    damping: 50,
+  });
+
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "700%"]);
 
-  const yBg1 = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+  const yBg1 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "10%"]),{stiffness: 150,
+    damping: 50,});
   const yBg2 = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
   const yBg3 = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const yBg4 = useTransform(scrollYProgress, [0, 1], ["0%", "75%"]);
