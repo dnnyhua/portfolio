@@ -46,7 +46,7 @@ const Single = ({ item }) => {
     damping: 50,
   });
   
-  const yText = useSpring(useTransform(scrollYProgress, [0,1], [-400, 400 ]),{ stiffness: 150, damping: 40 });
+  const yText = useSpring(useTransform(scrollYProgress, [0,1], [-600, 600 ]),{ stiffness: 150, damping: 40 });
 
   return <section>
     <div className="container" >

@@ -28,11 +28,11 @@ const Parallax = ({ type }) => {
     stiffness: 700,
     damping: 40,
   });
-  const yBg4 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "900%"]), {
+  const yBg4 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "1000%"]), {
     stiffness: 700,
     damping: 40,
   });
-  const yBg5 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "1200%"]), {
+  const yBg5 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "1300%"]), {
     stiffness: 700,
     damping: 40,
   });
