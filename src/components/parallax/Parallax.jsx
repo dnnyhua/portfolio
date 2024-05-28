@@ -11,19 +11,31 @@ const Parallax = ({ type }) => {
     offset: ["start start", "end start"]
   });
 
-  const xImage = useSpring(useTransform(scrollYProgress, [0, 1], [-300, 300]), {
-    stiffness: 150,
-    damping: 50,
+  const yText = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "1100%"]), {
+    stiffness: 300, // Increased stiffness for faster movement
+    damping: 40,    // Decreased damping for faster movement
   });
-
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "700%"]);
-
-  const yBg1 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "10%"]),{stiffness: 150,
-    damping: 50,});
-  const yBg2 = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
-  const yBg3 = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const yBg4 = useTransform(scrollYProgress, [0, 1], ["0%", "75%"]);
-  const yBg5 = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  
+  const yBg1 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "300%"]), {
+    stiffness: 700,
+    damping: 40,
+  });
+  const yBg2 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "500%"]), {
+    stiffness: 700,
+    damping: 40,
+  });
+  const yBg3 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "700%"]), {
+    stiffness: 700,
+    damping: 40,
+  });
+  const yBg4 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "900%"]), {
+    stiffness: 700,
+    damping: 40,
+  });
+  const yBg5 = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "1200%"]), {
+    stiffness: 700,
+    damping: 40,
+  });
 
 
   return (

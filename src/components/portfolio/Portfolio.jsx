@@ -59,10 +59,7 @@ const Single = ({ item }) => {
                 <p>{item.description}</p>
                 <button>See Project</button>
             </motion.div>
-
         </div>
-
-
     </div>
   </section>;
 };
