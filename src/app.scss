@@ -2,10 +2,7 @@ html {
     scroll-snap-type: y;
     scroll-behavior: smooth;
 
-    #Services, #Portfolio {
-        scroll-snap-align: none;
-
-    }
+    
 
     .services{
         scroll-snap-align: start;

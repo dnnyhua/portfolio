@@ -41,12 +41,12 @@ const Single = ({ item }) => {
     // offset: ["start start","end start"]
   });
 
-  const yImage = useSpring(useTransform(scrollYProgress, [0, 1], [-300, 300]), {
-    stiffness: 150,
-    damping: 50,
+  const yImage = useSpring(useTransform(scrollYProgress, [0, 1], [-400, 400]), {
+    stiffness: 40,
+    damping: 20,
   });
   
-  const yText = useSpring(useTransform(scrollYProgress, [0,1], [-600, 600 ]),{ stiffness: 150, damping: 40 });
+  const yText = useSpring(useTransform(scrollYProgress, [0,1], [-400, 400 ]),{ stiffness: 40, damping: 20 });
 
   return <section>
     <div className="container" >
@@ -75,7 +75,7 @@ const Portfolio = () => {
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
 
   return (
-    <div className="portfolio" ref={ref}>
+    <div className="portfolio">
       <div className="progress">
         <h1>Featured Works</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
