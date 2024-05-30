@@ -15,21 +15,6 @@ export const NavBar = () => {
         >
           Dev With Dan
         </motion.span>
-        
-        <div className="social">
-          <a href="#">
-            <img src="/linkedin.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/linkedin.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/linkedin.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/linkedin.png" alt="" />
-          </a>
-        </div>
       </div>
     </div>
   );

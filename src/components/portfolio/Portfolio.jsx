@@ -41,7 +41,7 @@ const Single = ({ item }) => {
     // offset: ["start start","end start"]
   });
 
-  const xImage = useSpring(useTransform(scrollYProgress, [0, 1], [-300, 300]), {
+  const yImage = useSpring(useTransform(scrollYProgress, [0, 1], [-300, 300]), {
     stiffness: 150,
     damping: 50,
   });
@@ -51,7 +51,7 @@ const Single = ({ item }) => {
   return <section>
     <div className="container" >
         <div className="wrapper" >
-            <motion.div className="imageContainer" ref={ref} style={{ y: xImage }}>
+            <motion.div className="imageContainer" ref={ref} style={{ y: yImage }}>
                 <img src={item.img} alt="" />       
             </motion.div>
             <motion.div className="textContainer" style={{y: yText}}> 
